@@ -1,0 +1,23 @@
+.radiance-logo{
+    width: 70%;
+}
+.mobile-img{
+    width: 90%;
+}
+.call-us{
+    color: aliceblue;
+}
+.first-heading{
+    text-align: left;
+    color: rgb(65,195,101);
+}
+.second-heading{
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.header{
+    background-image: url('/img/banner.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
