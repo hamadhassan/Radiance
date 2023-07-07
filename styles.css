@@ -43,3 +43,11 @@
     .float-label-control.label-bottom input:not(.empty) + label,
     .float-label-control.label-bottom textarea:not(.empty) + label { top: 3em; }
 
+    @media screen and (max-width: 992px) {
+        .header{
+            background-image: none;
+            background-color: rgb(188, 206, 196);
+
+        }
+       
+    }

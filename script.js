@@ -1,12 +1,13 @@
 
 function changeImg()   {
     var windowWidth = $(window).width();
-    if (windowWidth <= 992) {
-        $('body').css('background-image', 'none');
+    if (windowWidth <= 994) {
+        $('header').css('background-image', 'none');
     } else if (windowWidth > 640) {
-        $('body').css('background-image', 'url (/img/banner.png)');
+        $('header').css('background-image', 'url (/img/banner.png)');
     }
 }
+console.log( $(window).width())
 window.onload=changeImg;
 
   
