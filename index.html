@@ -46,24 +46,47 @@
       crossorigin="anonymous"
     />
     <title>Radiance</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/modules/06d3aecc98edbb4cb9566d03d551bbb6.min.css"
+    />
+    <link
+      rel="stylesheet"
+      id="roboto-subset.css-css"
+      href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/favicon.ico"
+    />
+    <link
+      rel="canonical"
+      href="https://mdbootstrap.com/docs/standard/extended/testimonial-slider/"
+    />
   </head>
   <body>
     <!--header-->
-    <header>
-      <div class="container header pl-5 pt-3">
-        <div class="row">
+    <header class="header">
+      <div class="container pl-5 pt-3">
+        <div class="row justify-content-md-center">
           <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 pl-5">
             <img class="radiance-logo" src="img/logo.png" alt="radiance-logo" />
           </div>
-          <div class="col-xl-7 col-lg-7 text-center pl-5">
+          <div class="col-xl-6 col-lg-7 text-center pl-5">
             <p class="customer-number">
               Customers <span class="text-white"> Call us: 1234567890</span>
             </p>
           </div>
         </div>
 
-        <div class="row no-gutters">
-          <div class="col-xl-5 col-lg-5 col-md-">
+        <div class="row no-gutters justify-content-md-center">
+          <div class="col-xl-5 col-lg-5 col-md-12">
             <h1 class="text-left text-success">Download <br />Free software</h1>
             <h2 class="text-left text-uppercase fw-bold pt-4 pb-5">
               Landing Pages
@@ -78,8 +101,8 @@
               Get Started
             </button>
           </div>
-          <div class="col-xl-7 col-lg-7 pl-5">
-            <img class="mobile-img" src="img/img.png" alt="mobile" />
+          <div class="col-xl-6 col-lg-7 pl-5 col-md-12">
+            <img class="mobile-header-img" src="img/img.png" alt="mobile" />
           </div>
         </div>
       </div>
@@ -89,7 +112,9 @@
       <div class="container">
         <div class="row text-center mt-3">
           <div class="col-xl-4">
-            <img class="pb-3" src="img/service1.png" alt="software" />
+            <div class="servise">
+              <img class="pt-3" src="img/service1.png" alt="software" />
+            </div>
             <h3>Software</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
@@ -99,7 +124,10 @@
             </p>
           </div>
           <div class="col-xl-4">
-            <img class="pb-3" src="img/service2.png" alt="mobile" />
+            <div class="servise">
+              <img class="pt-3" src="img/service2.png" alt="mobile" />
+            </div>
+
             <h3>For Mobile</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
@@ -109,7 +137,10 @@
             </p>
           </div>
           <div class="col-xl-4">
-            <img class="pb-3" src="img/service3.png" alt="computer" />
+            <div class="servise">
+              <img class="pt-3" src="img/service3.png" alt="computer" />
+            </div>
+
             <h3>For Computer</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
@@ -127,39 +158,17 @@
         Who <span class="text-success">We Are </span>
       </h3>
       <div class="container">
-        <div class="row no-gutters">
-          <div class="col-xl-4 col-lg-5">
+        <div class="row no-gutters justify-content-md-center">
+          <!--first-->
+          <div class="col-xl-4 col-lg-5 col-md-6">
             <img
               class="who-we-are-img"
               src="img/why1.png"
               alt="person-with-computer"
             />
           </div>
-          <div class="col-xl-6 col-lg-6">
-            <h4 class="text-uppercase">Middle of Text.</h4>
-            <p class="lh-lg py-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              repellendus vero non mollitia deleniti vitae. Laborum porro, esse
-              saepe deleniti labore, nesciunt perferendis tempora et aspernatur
-              nam facilis ipsa exercitationem. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sunt eligendi ex a beatae dolorem
-              est iusto commodi impedit iste consectetur, deserunt harum
-              blanditiis reprehenderit soluta, expedita excepturi veniam cum
-              ullam.
-            </p>
-            <button class="btn btn-outline-success rounded-0" type="button">
-              Get Started
-            </button>
-          </div>
-          <div class="col-xl-4 py-3 col-lg-5">
-            <img
-              class="who-we-are-img"
-              src="img/why2.png"
-              alt="person-with-mobile"
-            />
-          </div>
-          <div class="col-xl-6 mt-3 col-lg-6">
-            <h4 class="text-uppercase">Middle of Text.</h4>
+          <div class="col-xl-6 col-lg-6 col-md-6">
+            <h5 class="text-uppercase">Middle of Text.</h5>
             <p class="lh-lg py-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
               repellendus vero non mollitia deleniti vitae. Laborum porro, esse
@@ -171,10 +180,37 @@
               ullam.
             </p>
             <button
-              class="btn btn-outline-success rounded-0 mb-4"
+              class="btn btn-outline-success rounded-0 mb-lg-3 px-5"
               type="button"
             >
-              Get Started
+              Red More
+            </button>
+          </div>
+          <!--second-->
+          <div class="col-xl-4 col-lg-5 pt-3 col-md-6">
+            <img
+              class="who-we-are-img"
+              src="img/why2.png"
+              alt="person-with-mobile"
+            />
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 pt-md-4">
+            <h5 class="text-uppercase">Middle of Text.</h5>
+            <p class="lh-lg py-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              repellendus vero non mollitia deleniti vitae. Laborum porro, esse
+              saepe deleniti labore, nesciunt perferendis tempora et aspernatur
+              nam facilis ipsa exercitationem. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Sunt eligendi ex a beatae dolorem
+              est iusto commodi impedit iste consectetur, deserunt harum
+              blanditiis reprehenderit soluta, expedita excepturi veniam cum
+              ullam.
+            </p>
+            <button
+              class="btn btn-outline-success rounded-0 mb-5 px-5"
+              type="button"
+            >
+              Red More
             </button>
           </div>
         </div>
@@ -192,58 +228,249 @@
           necessitatibus nisi accusantium! Consectetur exercitationem facere
           illum, quam voluptatem beatae accusamus quidem.
         </p>
-        <div class="row no-gutters">
-          <div class="card-deck">
-            <div class="card bg-success text-white text-center">
-              <img
-                src="img/testimonial.jpg"
-                width="40px"
-                class="rounded mx-auto d-block pt-3"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">When Looking</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Illum, harum. Doloremque atque at blanditiis nulla. Deleniti
-                  facilis facere aperiam amet vero explicabo sint earum hic
-                  dolore quae! Adipisci, aliquid. Quia.
-                </p>
+
+        <!-- Carousel wrapper -->
+        <div
+          id="carouselMultiItemExample"
+          class="carousel slide carousel-dark text-center"
+          data-mdb-ride="carousel"
+        >
+        
+          <!-- Controls -->
+          <!--
+          <div class="d-flex justify-content-center mb-4">
+            <button
+              class="carousel-control-prev position-relative"
+              type="button"
+              data-mdb-target="#carouselMultiItemExample"
+              data-mdb-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next position-relative"
+              type="button"
+              data-mdb-target="#carouselMultiItemExample"
+              data-mdb-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        -->
+          <!-- Inner -->
+          <div class="carousel-inner py-4">
+            <!-- Single item -->
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="card bg-success text-white text-center">
+                      <img
+                        src="img/testimonial.jpg"
+                        width="40px"
+                        class="rounded mx-auto d-block pt-3"
+                      />
+                      <div class="card-body text-center">
+                        <h5 class="card-title text-uppercase">When Looking</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Illum, harum. Doloremque atque at blanditiis
+                          nulla. Deleniti facilis facere aperiam amet vero
+                          explicabo sint earum hic dolore quae! Adipisci,
+                          aliquid. Quia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="card bg-success text-white text-center">
+                      <img
+                        src="img/testimonial.jpg"
+                        width="40px"
+                        class="rounded mx-auto d-block pt-3"
+                      />
+                      <div class="card-body text-center">
+                        <h5 class="card-title text-uppercase">When Looking</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Illum, harum. Doloremque atque at blanditiis
+                          nulla. Deleniti facilis facere aperiam amet vero
+                          explicabo sint earum hic dolore quae! Adipisci,
+                          aliquid. Quia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="card bg-success text-white text-center">
+                      <img
+                        src="img/testimonial.jpg"
+                        width="40px"
+                        class="rounded mx-auto d-block pt-3"
+                      />
+                      <div class="card-body text-center">
+                        <h5 class="card-title text-uppercase">When Looking</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Illum, harum. Doloremque atque at blanditiis
+                          nulla. Deleniti facilis facere aperiam amet vero
+                          explicabo sint earum hic dolore quae! Adipisci,
+                          aliquid. Quia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card bg-success text-white text-center">
-              <img
-                src="img/testimonial.jpg"
-                width="40px"
-                class="rounded mx-auto d-block pt-3"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">When Looking</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Illum, harum. Doloremque atque at blanditiis nulla. Deleniti
-                  facilis facere aperiam amet vero explicabo sint earum hic
-                  dolore quae! Adipisci, aliquid. Quia.
-                </p>
+
+            <!-- Single item -->
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="card bg-success text-white text-center">
+                      <img
+                        src="img/testimonial.jpg"
+                        width="40px"
+                        class="rounded mx-auto d-block pt-3"
+                      />
+                      <div class="card-body text-center">
+                        <h5 class="card-title text-uppercase">When Looking</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Illum, harum. Doloremque atque at blanditiis
+                          nulla. Deleniti facilis facere aperiam amet vero
+                          explicabo sint earum hic dolore quae! Adipisci,
+                          aliquid. Quia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="card bg-success text-white text-center">
+                      <img
+                        src="img/testimonial.jpg"
+                        width="40px"
+                        class="rounded mx-auto d-block pt-3"
+                      />
+                      <div class="card-body text-center">
+                        <h5 class="card-title text-uppercase">When Looking</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Illum, harum. Doloremque atque at blanditiis
+                          nulla. Deleniti facilis facere aperiam amet vero
+                          explicabo sint earum hic dolore quae! Adipisci,
+                          aliquid. Quia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="card bg-success text-white text-center">
+                      <img
+                        src="img/testimonial.jpg"
+                        width="40px"
+                        class="rounded mx-auto d-block pt-3"
+                      />
+                      <div class="card-body text-center">
+                        <h5 class="card-title text-uppercase">When Looking</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Illum, harum. Doloremque atque at blanditiis
+                          nulla. Deleniti facilis facere aperiam amet vero
+                          explicabo sint earum hic dolore quae! Adipisci,
+                          aliquid. Quia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card bg-success text-white text-center">
-              <img
-                src="img/testimonial.jpg"
-                width="40px"
-                class="rounded mx-auto d-block pt-3"
-              />
-              <div class="card-body text-center">
-                <h5 class="card-title">When Looking</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Illum, harum. Doloremque atque at blanditiis nulla. Deleniti
-                  facilis facere aperiam amet vero explicabo sint earum hic
-                  dolore quae! Adipisci, aliquid. Quia.
-                </p>
+
+            <!-- Single item -->
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="card bg-success text-white text-center">
+                      <img
+                        src="img/testimonial.jpg"
+                        width="40px"
+                        class="rounded mx-auto d-block pt-3"
+                      />
+                      <div class="card-body text-center">
+                        <h5 class="card-title text-uppercase">When Looking</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Illum, harum. Doloremque atque at blanditiis
+                          nulla. Deleniti facilis facere aperiam amet vero
+                          explicabo sint earum hic dolore quae! Adipisci,
+                          aliquid. Quia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="card bg-success text-white text-center">
+                      <img
+                        src="img/testimonial.jpg"
+                        width="40px"
+                        class="rounded mx-auto d-block pt-3"
+                      />
+                      <div class="card-body text-center">
+                        <h5 class="card-title text-uppercase">When Looking</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Illum, harum. Doloremque atque at blanditiis
+                          nulla. Deleniti facilis facere aperiam amet vero
+                          explicabo sint earum hic dolore quae! Adipisci,
+                          aliquid. Quia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="card bg-success text-white text-center">
+                      <img
+                        src="img/testimonial.jpg"
+                        width="40px"
+                        class="rounded mx-auto d-block pt-3"
+                      />
+                      <div class="card-body text-center">
+                        <h5 class="card-title text-uppercase">When Looking</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Illum, harum. Doloremque atque at blanditiis
+                          nulla. Deleniti facilis facere aperiam amet vero
+                          explicabo sint earum hic dolore quae! Adipisci,
+                          aliquid. Quia.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!-- Inner -->
         </div>
+        <!-- Carousel wrapper -->
       </div>
     </section>
     <!--Frequently Asked Questions-->
@@ -252,11 +479,13 @@
         <h3 class="text-right py-4">
           Frequently Asked <span class="text-success">Questions </span>
         </h3>
-        <div class="row">
-          <div class="col-xl-6">
+        <div class="row justify-content-md-center">
+          <div
+            class="col-xl-6 pt-xl-5 pr-xl-5 col-lg-6 col-md-6 pt-md-6 mt-md-6 col-sm-12"
+          >
             <img src="img/ask.jpg" class="ask-img" alt="ask-question" />
           </div>
-          <div class="col-xl-6">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
             <div id="accordion">
               <div class="card border-success mt-3 rounded-0">
                 <div
@@ -451,8 +680,8 @@
       </div>
     </section>
     <!--Footer-->
-      <footer class="py-3">
-        <p class="text-center">© 2023 All Rights Reserved</p>
-      </footer>
+    <footer class="py-3">
+      <p class="text-center">© 2023 All Rights Reserved</p>
+    </footer>
   </body>
 </html>
