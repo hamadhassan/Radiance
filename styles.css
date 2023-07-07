@@ -7,9 +7,11 @@
 .call-us{
     color: aliceblue;
 }
-.first-heading{
-    text-align: left;
+.green-color{
     color: rgb(65,195,101);
+}
+.testimonial{
+    background-color: rgb(65,195,101);
 }
 .second-heading{
     text-align: left;
@@ -27,10 +29,12 @@
 .who-we-are{
     background-color: rgb(213,237,223);
 }
-.we-are{
-    color: rgb(65,195,101);
-}
+
 .why-us{
     text-align: center;
 }
+
+/* Testimonials Carousel */
+
+
 
