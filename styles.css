@@ -242,17 +242,17 @@
     justify-content: center;
     list-style: none;
     padding: 0;
-  }
+}
 
-  .carousel-dots li {
+.carousel-dots li {
     background-color:  hsl(137, 52%, 51%);
     border-radius: 50%;
     width: 12px;
     height: 12px;
     margin: 0 4px;
     cursor: pointer;
-  }
+}
 
-  .carousel-dots li.active {
+.carousel-dots li.active {
     background-color: #000;
-  }
+}
