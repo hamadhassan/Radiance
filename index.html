@@ -160,7 +160,6 @@
       <div class="container">
         <div class="row no-gutters justify-content-md-center">
           <!--first-->
-          <div class="col-xl-4 col-lg-5 col-md-6">
             <img
               class="who-we-are-img"
               src="img/why1.png"
@@ -187,7 +186,6 @@
             </button>
           </div>
           <!--second-->
-          <div class="col-xl-4 col-lg-5 pt-3 col-md-6">
             <img
               class="who-we-are-img"
               src="img/why2.png"
@@ -231,40 +229,10 @@
 
         <!-- Carousel wrapper -->
         <div
-          id="carouselMultiItemExample"
-          class="carousel slide carousel-dark text-center"
-          data-mdb-ride="carousel"
+          id="carousel-testimonial"
+          class="carousel slide"
+          data-ride="carousel"
         >
-        
-          <!-- Controls -->
-          <!--
-          <div class="d-flex justify-content-center mb-4">
-            <button
-              class="carousel-control-prev position-relative"
-              type="button"
-              data-mdb-target="#carouselMultiItemExample"
-              data-mdb-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next position-relative"
-              type="button"
-              data-mdb-target="#carouselMultiItemExample"
-              data-mdb-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        -->
           <!-- Inner -->
           <div class="carousel-inner py-4">
             <!-- Single item -->
@@ -469,6 +437,18 @@
             </div>
           </div>
           <!-- Inner -->
+          <div>
+            <!-- Indicators -->
+            <ol class="carousel-dots">
+              <li
+                data-target="#carousel-testimonial"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carousel-testimonial" data-slide-to="1"></li>
+              <li data-target="#carousel-testimonial" data-slide-to="2"></li>
+            </ol>
+          </div>
         </div>
         <!-- Carousel wrapper -->
       </div>
@@ -500,11 +480,7 @@
                   </a>
                   <i class="fa-solid fa-plus" style="color: #41c365"></i>
                 </div>
-                <div
-                  id="collapseOne"
-                  class="collapse show"
-                  data-parent="#accordion"
-                >
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
                   <div class="card-body">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
                     quod dolorem repellendus! Repellendus distinctio eligendi
@@ -527,11 +503,7 @@
                   </a>
                   <i class="fa-solid fa-plus" style="color: #41c365"></i>
                 </div>
-                <div
-                  id="collapseTwo"
-                  class="collapse show"
-                  data-parent="#accordion"
-                >
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
                   <div class="card-body">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
                     quod dolorem repellendus! Repellendus distinctio eligendi
@@ -556,7 +528,7 @@
                 </div>
                 <div
                   id="collapseThree"
-                  class="collapse show"
+                  class="collapse"
                   data-parent="#accordion"
                 >
                   <div class="card-body">
@@ -583,7 +555,7 @@
                 </div>
                 <div
                   id="collapseFour"
-                  class="collapse show"
+                  class="collapse"
                   data-parent="#accordion"
                 >
                   <div class="card-body">
@@ -610,7 +582,7 @@
                 </div>
                 <div
                   id="collapseFive"
-                  class="collapse show"
+                  class="collapse"
                   data-parent="#accordion"
                 >
                   <div class="card-body">
@@ -684,4 +656,17 @@
       <p class="text-center">© 2023 All Rights Reserved</p>
     </footer>
   </body>
+  <script>
+    $(document).ready(function () {
+      // Initialize the carousel
+      $("#carousel-testimonial").carousel();
+
+      // Update active class on indicator click
+      $(".carousel-dots li").click(function () {
+        $(".carousel-dots li").removeClass("active");
+        $(this).addClass("active");
+      });
+     
+    });
+  </script>
 </html>
