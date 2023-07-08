@@ -215,13 +215,12 @@
     .ask-img {
         width: 30rem;
     }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .ask-img {
-        width: 38rem;
-    }
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
 
     .header {
         background-image: url('img/banner.png');
