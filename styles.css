@@ -164,9 +164,29 @@
 .float-label-control.label-bottom textarea:not(.empty)+label {
     top: 3em;
 }
+/* For Mobile Portrait View 480px and down */
+@media only screen and (max-width: 480px) {
+    .ask-img {
+        width: 15rem;
+    }
+    .customer-number {
+        display: none;
+    }
+    .header {
+        background-color: rgb(188, 206, 196);
+    }
+    .mobile-header-img {
+        width:13rem;
+        
+    }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+    .who-we-are-img {
+        width:18rem;
+        height: auto;
+    }
+}
+/* Extra small devices (480px and up) */
+@media only screen and (min-width: 480px) {
     .ask-img {
         width: 15rem;
     }
@@ -179,6 +199,11 @@
     .mobile-header-img {
         width:13rem;
     }
+    .who-we-are-img {
+        width: auto;
+        height: auto;
+    }
+    
    
 }
 
@@ -196,9 +221,18 @@
     .mobile-header-img {
         width: 20rem;
     }
+    .who-we-are-img {
+        width: auto;
+        height: auto;
+    }
 
 }
-
+/*Special media quwery between 576px and 767px*/
+@media (min-width: 576px) and (max-width: 767px) {
+    .client-testimonial-description{
+        margin-left: 5rem;
+    }
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .ask-img {
