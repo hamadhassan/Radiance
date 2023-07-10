@@ -1,15 +1,12 @@
 .radiance-logo {
     width: 6rem;
 }
-
+.who-we-are {
+    background-color: rgb(213, 237, 223);
+}
 .who-we-are-img {
     width: 19rem;
     height: 15rem;
-}
-
-
-.who-we-are {
-    background-color: rgb(213, 237, 223);
 }
 
 .contact-us {
@@ -26,6 +23,28 @@
     display: inline-block;
 
 }
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.carousel-dots li {
+    background-color:  hsl(137, 52%, 51%);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.carousel-dots li.active {
+    background-color: #000;
+}
+
+
 
 .float-label-control {
     position: relative;
@@ -160,7 +179,7 @@
     .mobile-header-img {
         width:13rem;
     }
-
+   
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -177,7 +196,6 @@
     .mobile-header-img {
         width: 20rem;
     }
-    
 
 }
 
@@ -185,6 +203,7 @@
 @media only screen and (min-width: 768px) {
     .ask-img {
         width: 24rem;
+        
     }
     .customer-number {
         display: none;
@@ -195,6 +214,14 @@
     .mobile-header-img {
         width: 30rem;
     }
+    .who-we-are-img {
+        width: auto;
+        height: auto;
+    }
+    .download-align::after{
+        content: "";
+        white-space: pre;
+    }    
 
    
 }
@@ -216,6 +243,16 @@
     .ask-img {
         width: 30rem;
     }
+    .who-we-are-img {
+        width: 19rem;
+        height: 15rem;
+    }
+    .download-align::after{
+        content: "\a";
+        white-space: pre;
+    }    
+   
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -235,24 +272,12 @@
     .mobile-header-img {
         width: 35rem;
     }
-}
-
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-.carousel-dots li {
-    background-color:  hsl(137, 52%, 51%);
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    margin: 0 4px;
-    cursor: pointer;
-}
-
-.carousel-dots li.active {
-    background-color: #000;
+    .who-we-are-img {
+        width: 19rem;
+        height: 15rem;
+    }
+    .download-align::after{
+        content: "\a";
+        white-space: pre;
+    }    
 }
